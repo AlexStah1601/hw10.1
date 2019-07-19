@@ -9,7 +9,7 @@
           flex-direction: column;
   margin-bottom: 80px;
   font-size: 24px;
-  color: #000;
+  color: #fff;
 }
 
 .subtitle {
@@ -119,7 +119,7 @@ h2 {
 
 .meter {
   width: 150px;
-  height: 1px;
+  height: 2px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -149,20 +149,21 @@ h2 {
 .portfolio {
   width: 100%;
   height: 790px;
+  background-color: #c7bfbf;
 }
 
-.wrapper {
+.wrapper--img {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .partners {
@@ -170,7 +171,6 @@ h2 {
   height: 574px;
   background: url(../img/fonpartners.png);
   background-size: 100vw;
-  margin: 0 0 0 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -249,7 +249,7 @@ h2 {
   .header .list {
     display: none;
   }
-  .header__logo-img, .title, .meter {
+  .header__logo-img, .title {
     margin-bottom: 90px;
   }
   .about__content-count--img {
@@ -276,7 +276,7 @@ h2 {
   .header .list {
     display: none;
   }
-  .header__logo-img, .title, .meter {
+  .header__logo-img, .title {
     padding: 80px 0;
     height: 850px;
     margin-bottom: 90px;
@@ -299,21 +299,21 @@ h2 {
 }
 
 @media screen and (max-width: 800px) {
-  .home {
+  .header {
     height: 600px;
   }
-  .home .menu {
+  .header .menu {
     display: none;
   }
-  .home__wrapper {
+  .header__wrapper {
     padding: 80px 0;
     height: 850px;
   }
-  .home__logo-image, .home__company-name, .home__slogan,
-  .home .underscore {
+  .header__logo-image, .header__company-name, .header__slogan,
+  .header {
     margin-bottom: 90px;
   }
-  .home .view-wrapper {
+  .header .view-wrapper {
     height: 200px;
   }
   .about__description,
@@ -346,7 +346,6 @@ h2 {
 form {
   width: 25%;
   height: 30px;
-  margin-left: 40px;
   margin-bottom: 100px;
   float: left;
   position: relative;

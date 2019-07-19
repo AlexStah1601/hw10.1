@@ -26,7 +26,7 @@
   flex-direction: column;
   margin-bottom: 80px;
   font-size: 24px;
-  color: #000;;
+  color: #fff;;
    }
 
 .subtitle{
@@ -100,24 +100,9 @@ h2{
   justify-content: center;
   }
 
-  // .meter {
-  //   width: 150px;
-  //   //height: 1px;  
-  //   justify-content: center;
-  //   background: rgb(116, 116, 231);
-  //   -moz-border-radius: 2px;
-  //   -webkit-border-radius: 2px;
-  //   border-radius: 2px;
-  //   padding: 40px;
-  //   @include margin;
-  //   margin-top: 30px;
-  //   margin-bottom: 30px;
-  //    }
-
-  
   .meter {
     width: 150px;
-    height: 1px; 
+    height: 2px; 
     justify-content: center;
     background: rgb(116, 116, 231);
     -moz-border-radius: 2px;
@@ -146,19 +131,13 @@ h2{
   .portfolio {
     width: 100%;
     height: 790px;
+    background-color: rgb(199, 191, 191);
   }
     
-  .wrapper {
-    -webkit-box-sizing: border-box;
+  .wrapper--img {
     box-sizing: border-box;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
   }
   
@@ -167,7 +146,6 @@ h2{
       height: 574px;
       background: url(../img/fonpartners.png);
       background-size: 100vw;
-      margin: 0 0 0 50px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -199,7 +177,7 @@ h2{
     }
   
       &__img {
-             margin: 0 40px;
+       margin: 0 40px;
       }
   
       button:first-child {
@@ -213,8 +191,7 @@ h2{
         background-color: transparent;
       }
     }
-  
-  
+    
   @media screen and (max-width:1920px) {
     .header {
       height: 1080px;
@@ -222,7 +199,7 @@ h2{
     .header .list {
       display: none;
     }
-      .header__logo-img, .title, .meter {
+      .header__logo-img, .title {
       margin-bottom: 90px;
     }
     .about__content-count--img {
@@ -243,7 +220,7 @@ h2{
     .header .list{
       display: none;
     }
-    .header__logo-img, .title, .meter {
+    .header__logo-img, .title {
       padding: 80px 0;
       height: 850px;
       margin-bottom: 90px;
@@ -260,21 +237,21 @@ h2{
   }
  
   @media screen and (max-width: 800px) {
-    .home {
+    .header {
       height: 600px;
     }
-    .home .menu {
+    .header .menu {
       display: none;
     }
-    .home__wrapper {
+    .header__wrapper {
       padding: 80px 0;
       height: 850px;
     }
-    .home__logo-image, .home__company-name, .home__slogan,
-    .home .underscore {
+    .header__logo-image, .header__company-name, .header__slogan,
+    .header {
       margin-bottom: 90px;
     }
-    .home .view-wrapper {
+    .header .view-wrapper {
       height: 200px;
     }
     .about__description,
@@ -299,7 +276,7 @@ h2{
     form{
       width: 25%;
       height: 30px;
-      margin-left:40px;
+      // margin-left:40px;
       margin-bottom: 100px;
       float:left;
       position:relative;
